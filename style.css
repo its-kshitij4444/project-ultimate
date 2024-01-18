@@ -1,0 +1,89 @@
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+@keyframes filter-animation {
+    0% {
+        filter: none;
+    }
+
+    100% {
+        filter: blur(4px);
+    }
+}
+
+#myVideo.animated {
+    animation: filter-animation 5.5s forwards;
+}
+
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+.array {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+ }
+
+ .profile-pic {
+    height: 100px;
+    width: 110px;
+    /* background-color: red; */
+    display: flex;
+    flex-shrink: 0;
+ }
+
+ .header-title {
+    flex: 1;
+    font-family: Kanit, Arial;
+    font-style: 400;
+    font-size: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 300px;
+ }
+
+ .follow-pages {
+    /* background-color: pink; */
+    align-items: center;
+    height: 100px;
+    width: 105px;
+ }
+
+ #contact {
+    position: absolute;
+    color: white;
+    background-color: black;
+    font-family: Kanit, Arial;
+    border-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+ }
+
+ img {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+ }
+
+ body {
+    margin: 0;
+    background-color: rgb(14, 14, 60);
+ }
