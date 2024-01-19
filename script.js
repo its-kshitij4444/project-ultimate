@@ -1,6 +1,6 @@
-function activateFilterAnimation() {
-    $("#myVideo").toggleClass("animated");
-  }
+// function activateFilterAnimation() {
+//     $("#myVideo").toggleClass("animated");
+//   }
 
-activateFilterAnimation();
+// activateFilterAnimation();
 
