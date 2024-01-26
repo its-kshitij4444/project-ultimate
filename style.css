@@ -48,12 +48,6 @@ p {
     border-radius: 10px;
  }
 
- /* .profile-pic {
-    height: 82px;
-    width: 92px;
-    flex-shrink: 0;
- } */
-
  .header-title {
     font-size: 50px;
     height: 82px;
@@ -134,6 +128,97 @@ main{
     right: 0;
     height: 80%;
  }
+
+ #cpage{
+    justify-content: space-evenly;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    border: 1px solid white;
+ }
+
+ .contact-page-1,
+ .contact-page-2,
+ .contact-page-3{
+    position: relative;
+    border: 1px solid white;
+    border-radius: 15px;
+    display: flex;
+    height: 400px;
+    width: 300px;
+ }
+
+ .contact-page-1 ion-icon,
+ .contact-page-2 ion-icon,
+ .contact-page-3 ion-icon{
+   color: #fff;
+   font-size: 100px;
+   position: relative;
+   top: 100px;
+   left: 100px;
+ }
+
+ .contact-page-1 p{
+   font-size: 20px;
+   height: fit-content;
+   color: white;
+   position: relative;
+   top: 230px;
+   right: 24px;
+ }
+
+ .contact-page-2 p{
+   font-size: 20px;
+   height: fit-content;
+   color: white;
+   position: relative;
+   top: 230px;
+   right: 32px;
+ }
+
+ .contact-page-3 p{
+   font-size: 20px;
+   height: fit-content;
+   color: white;
+   position: relative;
+   top: 230px;
+   right: 33px;
+ }
+
+ .contact-page-1:hover{
+   background-color: black;
+   transition: 0.5s ease-out;
+ }
+
+ .contact-page-2:hover{
+   background-color: #0072b1;
+   transition-timing-function: ease-in-out;
+   transition: 0.5s ease-out;
+ }
+
+ .contact-page-3{
+   overflow: hidden;
+ }
+
+ .contact-page-3::before{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(to right,#f9ce34,#ee2a7b,#6228d7);
+   content: "";
+   z-index: -1;
+   transition: opacity 0.5s linear;
+   opacity: 0;
+ }
+
+ .contact-page-3:hover::before{
+   opacity: 1;
+ }
+
+
+
+
 
  body{
     min-height: 100vh;
