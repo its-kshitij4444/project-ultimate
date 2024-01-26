@@ -48,21 +48,23 @@ p {
     border-radius: 10px;
  }
 
- .profile-pic {
+ /* .profile-pic {
     height: 82px;
     width: 92px;
     flex-shrink: 0;
- }
+ } */
 
  .header-title {
     font-size: 50px;
     height: 82px;
     width: 350px;
+    flex-shrink: 0;
  }
 
  .follow-pages {
     height: 82px;
     width: 105px;
+    flex-shrink: 0;
  }
 
 button {
@@ -85,20 +87,52 @@ button {
  }
 
  .navbar{
-    margin-top: 50px;
-    margin-left: 70px;
-    height: 70vh;
-    border-radius: 50px;
-    border: 2px solid red;
     display: flex;
+    position: relative;
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    top: 150px;
+    left: 70px;
+    height: 40vh;
+    border-radius: 50px;
+    border: 1px solid white;
     width: 92px;
  }
 
- img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50px;
-    vertical-align: text-bottom;
+ .navbar ul{
+    list-style-type: none;
+ }
+ .navbar a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+ }
+
+ .navbar a:hover{
+    color: lightgoldenrodyellow;
+ }
+
+main{
+    display: flex;
+    justify-content: center;
+    border: 2px solid red;
+    border-radius: 15px;
+    position: absolute;
+    left: 15vw;
+    top: 20vh;
+    width: 82vw;
+    height: 72vh;
+ }
+
+ main img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80%;
  }
 
  body{
