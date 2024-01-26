@@ -169,6 +169,7 @@ main{
     display: flex;
     height: 400px;
     width: 300px;
+    overflow: hidden;
  }
 
  .contact-page-1 ion-icon,
@@ -200,19 +201,18 @@ main{
     right: 32px;
   }
 
+
+  .contact-page-1,
+  .contact-page-2{
+    transition: 0.5s;
+  }
+
  .contact-page-1:hover{
    background-color: black;
-   transition: 0.5s;
  }
 
  .contact-page-2:hover{
    background-color: #0072b1;
-   transition-timing-function: ease-in-out;
-   transition: 0.5s;
- }
-
- .contact-page-3{
-   overflow: hidden;
  }
 
  .contact-page-3::before{
