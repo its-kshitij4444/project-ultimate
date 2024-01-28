@@ -51,18 +51,17 @@ body{
 
  .header-title {
     font-size: 50px;
-    height: 82px;
-    width: 350px;
+    height: 100%;
     flex-shrink: 0;
  }
 
- .follow-pages {
+ /* .follow-pages {
     height: 82px;
     width: 105px;
     flex-shrink: 0;
- }
+ } */
 
-button {
+/* button {
     font-size: 1rem;
     color: white;
     background-color: midnightblue;
@@ -79,7 +78,7 @@ button {
  button:hover{
     background: transparent;
     color: lightgoldenrodyellow;
- }
+ } */
 
  .navbar{
     display: flex;
@@ -124,10 +123,11 @@ main{
  }
 
  main img{
+    float: left;
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 90%;
+    height: 85%;
     filter: brightness(70%);
  }
 
