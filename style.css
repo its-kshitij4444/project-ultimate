@@ -191,13 +191,14 @@ main{
   bottom: 0;
  }
 
- @media (max-width: 426px) {
+ @media (max-width: 1080px){
     .navbar{
       height: 6vh;
       width: 70vw;
       top: 3vh;
       left: 16vw;
       float: left;
+      border-radius: 80px;
   }
 
   .navbar li {
@@ -210,24 +211,70 @@ main{
 
   .navbar a {
     margin-top: 0;
+    font-size: 45px;
+    padding: 30px;
   }
 
   .array {
     align-items: flex-start;
+    height: 120px;
+    border-radius: 20px;
   }
 
   .array h1 {
-    font-size: 35px;
+    font-size: 50px;
     position: relative;
-    top: 2.5vh;
+    top: 14%;
   }
 
-  main {
+  .hpage,.cpage,.abpage {
     left: 10vw;
-    top: 25vh;
+    top: 17vh;
+    border-radius: 40px;
   }
 
-  main h1{
-    font-size: 20px;
+  .hpage h1{
+    font-size: 65px;
   }
+
+  .hpage p{
+    font-size: 42px;
+    top: 7vh;
+  }
+
+  .arrbee{
+    height: 70px;
+    font-size: 45px;
+  }
+
+  .abpage img{
+    height: 50%;
+  }
+  
+  .cpage{
+    flex-direction: column;
+  }
+
+  .contact-page-1,
+  .contact-page-2,
+  .contact-page-3{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+ .contact-page-1 ion-icon,
+ .contact-page-2 ion-icon,
+ .contact-page-3 ion-icon{
+   font-size: 200px;
+   top: 100px;
+   left: 32vw;
+ }
+
+ .contact-page-1 a,
+ .contact-page-2 a,
+ .contact-page-3 a{
+   font-size: 40px;
+   top: 150px;
+}
 }
