@@ -187,7 +187,7 @@ main{
   background-color: #fff;
   width: 100%;
   font-weight: bolder;
-  position: absolute;
+  position: fixed;
   bottom: 0;
  }
 
