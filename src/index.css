@@ -29,7 +29,7 @@
       #root {
         width: 100%;
         min-height: 100vh;
-        background-image: url('/src/images/cybernetic-fortress-2.jpeg');
+        background-image: url('/public/images/cybernetic-fortress-2.jpeg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;

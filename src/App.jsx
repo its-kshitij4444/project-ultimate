@@ -28,7 +28,7 @@ export default function App() {
 
     <ContainerComp id='about' styles='flex-col bg-black/40' text='About me'>
     <img
-              src="/src/images/me.png"
+              src="/images/me.png"
               class="hidden md:block absolute bottom-0 left-0 h-[60%] filter brightness-70"
               alt="Profile"
             />
