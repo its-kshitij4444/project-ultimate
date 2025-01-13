@@ -18,19 +18,19 @@ const ProjectDisplay = ({item,images,children}) => {
 
   return (
     <>
-    <div className='relative overflow-hidden border border-white h-[450px] w-[80] rounded-lg'>
+    <div className='relative overflow-hidden border border-white h-[300px] sm:h-[350px] md:h-[450px] w-[80%] rounded-lg'>
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
         style={{ width: '100%', height: '100%', objectFit: 'cover' }}
       />
     </div>
-    <div className="flex justify-between w-full mt-4 px-4">
-      <button className='text-black text-2xl bg-white hover:bg-yellow-300' onClick={handlePrev}>&#8592;</button>
-      <button className='text-black text-2xl bg-white hover:bg-yellow-300' onClick={handleNext}>&#8594;</button>
+    <div className="flex justify-between w-full mt-2 sm:mt-4 px-2 sm:px-4">
+      <button className='text-black text-xl sm:text-2xl bg-white hover:bg-yellow-300' onClick={handlePrev}>&#8592;</button>
+      <button className='text-black text-xl sm:text-2xl bg-white hover:bg-yellow-300' onClick={handleNext}>&#8594;</button>
     </div>
     <br />
-    <p className='text-2xl text-yellow-400'>{item}</p>
+    <p className='text-xl sm:text-2xl text-yellow-400'>{item}</p>
     {children}
     </>
   )
