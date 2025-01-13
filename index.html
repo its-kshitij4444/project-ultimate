@@ -1,171 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
       rel="stylesheet"
     />
-    <style>
-      * {
-        font-family: Kanit, Arial;
-        scroll-behavior: smooth;
-        scrollbar-width: thin;
-        scrollbar-color: #f9ce34 #1a202c;
-        scroll-padding-top: 90px;
-      }
-      body {
-        background-image: url(./images/cybernetic-fortress-2.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-attachment: fixed;
-      }
-
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: #1a202c;
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background: #f9ce34;
-        border-radius: 10px;
-      }
-
-      ::-webkit-scrollbar-thumb:hover {
-        background: #ee2a7b;
-      }
-
-      @media (max-width: 768px) {
-        nav {
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: auto;
-          border-radius: 12px 12px 0 0;
-          background: rgba(0, 0, 0, 0.8);
-        }
-        nav ul {
-          display: flex;
-          justify-content: space-around;
-          width: 100%;
-          padding: 0.5rem;
-        }
-      }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
   </head>
-  <body class="min-h-screen text-white bg-[#1a202c]">
-    <div class="flex flex-col md:flex-row min-h-screen">
-      <!-- Header Section -->
-      <header class="fixed top-0 left-0 right-0 flex justify-center items-center backdrop-blur-sm text-white h-20 border-b border-white z-20">
-        <h1 class="text-2xl md:text-4xl px-4">Kshitij Jagtap</h1>
-      </header>
-
-      <!-- Navigation Bar -->
-      <nav class="md:fixed md:left-8 md:top-40 flex justify-center items-center md:h-[40vh] w-full md:w-24 bg-transparent backdrop-blur-sm border border-white md:rounded-full z-10">
-        <ul class="list-none">
-          <li>
-            <a href="#home" class="block text-white text-center p-3 md:p-5 hover:text-yellow-300 transition-colors">Home</a>
-          </li>
-          <li>
-            <a href="#about" class="block text-white text-center p-3 md:p-5 hover:text-yellow-300 transition-colors">About Me</a>
-          </li>
-          <li>
-            <a href="#projects" class="block text-white text-center p-3 md:p-5 hover:text-yellow-300 transition-colors">Projects</a>
-          </li>
-          <li>
-            <a href="#contact" class="block text-white text-center p-3 md:p-5 hover:text-yellow-300 transition-colors">Contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main Content Container -->
-      <div class="flex-1 md:ml-32 p-4 mt-20">
-        <!-- Main Section: Home -->
-        <main id="home" class="flex flex-col justify-start items-center bg-black/60 backdrop-blur-sm text-center text-white border border-white rounded-md w-full max-w-6xl mx-auto mb-12 p-8 min-h-[600px]">
-          <h1 class="text-2xl md:text-3xl mt-4 md:mt-8">Welcome to My Website</h1>
-          <p class="mt-6 text-base md:text-lg lg:text-2xl w-full md:w-4/5 leading-relaxed">
-            Hello there! This is my Portfolio Website, a digital canvas that
-            reflects my passion and expertise. As you navigate through these virtual
-            pages, you'll discover a collection of my most noteworthy projects,
-            showcasing my skills in web development, design, and problem-solving.
-            Each project tells a unique story of challenges overcome and creative
-            solutions implemented. <br />
-            <br />My journey in the world of technology and design is depicted here,
-            from the early days of learning to the current state of polished
-            proficiency. Feel free to explore the various sections to gain insights
-            into my professional background, skill set, and the innovative projects
-            that have shaped my career. Thank you for visiting, and I hope you enjoy
-            the glimpse into my world of creativity and dedication.
-          </p>
-        </main>
-
-        <!-- About Me Section -->
-        <section id="about" class="flex flex-col justify-start items-center bg-black/60 backdrop-blur-sm text-white border border-white rounded-md w-full max-w-6xl mx-auto mb-12 p-8 min-h-[600px]">
-          <h1 class="text-2xl md:text-3xl mt-4 md:mt-8">About Me</h1>
-          <div class="relative w-full">
-            <img
-              src="./images/IMG20231229142653-removebg-preview.png"
-              class="hidden md:block absolute bottom-0 left-0 h-[75%] filter brightness-70"
-              alt="Profile"
-            />
-            <p class="relative text-base md:text-lg lg:text-2xl w-full md:w-[85%] md:ml-auto mt-6 leading-relaxed">
-              Hey there! My name is Kshitij Jagtap, and welcome to my static portfolio
-              website. Here, I'd like to share a bit about myself, the projects I've
-              worked on, and showcase some of the work I've put into developing these
-              ideas. This website is part of a personal initiative I've been calling
-              "Project Ultimate"—a collection of ideas and innovations that I aim to
-              bring to life, starting with this very platform.
-              <br />
-              <br />
-              I'm excited to finally see this project take shape with the creation of
-              this site. However, this is just the beginning. There are countless more
-              ideas I want to implement, gradually building them into smaller,
-              meaningful projects that will come together as a cohesive whole under
-              the "Project Ultimate" banner. I hope to continuously evolve this space,
-              incorporating new skills, fresh designs, and innovative solutions as I
-              grow as a developer. Stay tuned for more updates as Project Ultimate
-              unfolds!
-            </p>
-          </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="flex flex-col justify-start items-center bg-black/60 backdrop-blur-sm text-white border border-white rounded-md w-full max-w-6xl mx-auto mb-12 p-8 min-h-[600px]">
-          <h1 class="text-2xl md:text-3xl mt-4 md:mt-8">Projects</h1>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="flex flex-col md:flex-row justify-evenly items-center bg-black/60 backdrop-blur-sm border border-white rounded-lg w-full max-w-6xl mx-auto mb-20 p-8 gap-6 min-h-[600px]">
-          <div class="contact-page-1 relative flex flex-col items-center border border-white rounded-lg h-[300px] md:h-[400px] w-full md:w-[300px] overflow-hidden transition-all duration-500 hover:bg-black">
-            <ion-icon name="logo-github" class="text-white text-[60px] md:text-[100px] mt-[60px] md:mt-[80px]"></ion-icon>
-            <a href="https://github.com/its-kshitij4444" target="_blank" class="text-white text-lg mt-6 no-underline hover:text-yellow-300 transition-colors">Follow on GitHub</a>
-          </div>
-          <div class="contact-page-2 relative flex flex-col items-center border border-white rounded-lg h-[300px] md:h-[400px] w-full md:w-[300px] overflow-hidden transition-all duration-500 hover:bg-[#0072b1]">
-            <ion-icon name="logo-linkedin" class="text-white text-[60px] md:text-[100px] mt-[60px] md:mt-[80px]"></ion-icon>
-            <a href="https://www.linkedin.com/in/kshitij-jagtap-59243328b/" target="_blank" class="text-white text-lg mt-6 no-underline hover:text-yellow-300 transition-colors">Follow on LinkedIn</a>
-          </div>
-          <div class="contact-page-3 relative flex flex-col items-center border border-white rounded-lg h-[300px] md:h-[400px] w-full md:w-[300px] overflow-hidden group">
-            <ion-icon name="logo-instagram" class="text-white text-[60px] md:text-[100px] mt-[60px] md:mt-[80px] z-20"></ion-icon>
-            <a href="https://www.instagram.com/urstrulykshitij/" target="_blank" class="text-white text-lg mt-6 no-underline relative z-20 hover:text-yellow-300 transition-colors">Follow on Instagram</a>
-            <div class="absolute inset-0 transition-opacity duration-500 opacity-0 group-hover:opacity-100 z-10" style="background: linear-gradient(to right, #f9ce34, #ee2a7b, #6228d7);"></div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <body class="text-white bg-[#1a202c] font-kanit">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

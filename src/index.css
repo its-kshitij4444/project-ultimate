@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: #f9ce34 #1a202c;
+        scroll-padding-top: 25px;
+      }
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #1a202c;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #f9ce34;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ee2a7b;
+      }
+
+      #root {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('/src/images/cybernetic-fortress-2.jpeg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
