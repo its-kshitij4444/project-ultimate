@@ -10,7 +10,7 @@ export default function App() {
     <>
     <Header />
     <ContainerComp id='home' styles='flex-col bg-black/40 items-center' text='Welcome to my website!'>
-    <p class="mt-6 text-base md:text-lg lg:text-2xl w-full md:w-4/5 leading-relaxed">
+    <p className="mt-6 text-base md:text-lg lg:text-2xl w-full md:w-4/5 leading-relaxed">
             Hello there! This is my Portfolio Website, a digital canvas that
             reflects my passion and expertise. As you navigate through these virtual
             pages, you'll discover a collection of my most noteworthy projects,
@@ -32,7 +32,7 @@ export default function App() {
               class="hidden md:block absolute bottom-0 left-0 h-[60%] filter brightness-70"
               alt="Profile"
             />
-    <p class="relative text-base md:text-lg lg:text-2xl w-full md:w-[85%] md:ml-auto mt-6 leading-relaxed">
+    <p className="relative text-base md:text-lg lg:text-2xl w-full md:w-[85%] md:ml-auto mt-6 leading-relaxed">
               Hey there! My name is Kshitij Jagtap, and welcome to my static portfolio
               website. Here, I'd like to share a bit about myself, the projects I've
               worked on, and showcase some of the work I've put into developing these
@@ -52,9 +52,11 @@ export default function App() {
             </p>
     </ContainerComp>
 
-    <ContainerComp id='projects' styles='flex-col bg-black/40 overflow-scroll' text='Projects'>
-      <ProjectDisplay item='Project Name'>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, laboriosam, quia repudiandae dolorem ad consequuntur, maiores natus harum enim labore ea deserunt delectus. Cupiditate, blanditiis eos nobis perspiciatis eaque harum!</p>
+    <ContainerComp id='projects' styles='flex-col bg-black/40 overflow-auto overflow-x-hidden' text='Projects'>
+      <ProjectDisplay item='Project - Pharmacy Management System' images={['/images/p-m-1.png','/images/p-m-2.png','/images/p-m-3.png']}>
+        <p className='text-lg'>The Pharmacy Management System is a GUI-based application developed using Python (Tkinter) and MySQL, designed to streamline the management of pharmacy operations. <br />
+        <a className='hover:text-blue-500' href='https://github.com/its-kshitij4444/Pharmacy-Management-Mini-Project'>GitHub Link to Project</a>
+        </p>
       </ProjectDisplay>
     </ContainerComp>
 
