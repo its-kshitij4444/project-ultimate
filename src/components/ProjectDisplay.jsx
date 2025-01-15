@@ -18,11 +18,11 @@ const ProjectDisplay = ({item,images,children}) => {
 
   return (
     <>
-    <div className='relative overflow-hidden border border-white h-[300px] sm:h-[350px] md:h-[450px] w-[80%] rounded-lg'>
+    <div className='relative bg-black/55 overflow-hidden border border-white h-[300px] sm:h-[350px] md:h-[450px] w-[100%] rounded-lg'>
       <img
         src={images[currentIndex]}
         alt={`Slide ${currentIndex + 1}`}
-        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
       />
     </div>
     <div className="flex justify-between w-full mt-2 sm:mt-4 px-2 sm:px-4">
@@ -32,6 +32,8 @@ const ProjectDisplay = ({item,images,children}) => {
     <br />
     <p className='text-xl sm:text-2xl text-yellow-400'>{item}</p>
     {children}
+    <hr />
+    <br />
     </>
   )
 }

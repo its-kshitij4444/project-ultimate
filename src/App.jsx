@@ -53,10 +53,16 @@ export default function App() {
         </p>
       </ContainerComp>
 
-      <ContainerComp id='projects' styles='flex-col bg-black/40 overflow-auto overflow-x-hidden' text='Projects'>
+      <ContainerComp id='projects' styles='flex-col bg-black/40 overflow-auto' text='Projects'>
         <ProjectDisplay item='Project - Pharmacy Management System' images={['/images/p-m-1.png','/images/p-m-2.png','/images/p-m-3.png']}>
           <p className='text-lg'>The Pharmacy Management System is a GUI-based application developed using Python (Tkinter) and MySQL, designed to streamline the management of pharmacy operations. <br />
             <a className='hover:text-blue-500' href='https://github.com/its-kshitij4444/Pharmacy-Management-Mini-Project'>GitHub Link to Project</a>
+          </p>
+        </ProjectDisplay>
+
+        <ProjectDisplay item='Project - Tic Tac Toe Game' images={['/images/ttt1.png','/images/ttt2.png','/images/ttt3.png']}>
+          <p className='text-lg'>This Tic Tac Toe game was created using Vite + React, Tailwind CSS, and it uses state management and event handling concepts. <br />
+            <a className='hover:text-blue-500' href='https://https://github.com/its-kshitij4444/tic-tac-toe'>GitHub Link to Project</a>
           </p>
         </ProjectDisplay>
       </ContainerComp>
