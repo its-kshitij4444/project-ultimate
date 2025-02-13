@@ -60,11 +60,11 @@ export default function App() {
           </p>
         </ProjectDisplay>
 
-        <ProjectDisplay item='Project - Tic Tac Toe Game' images={['/images/ttt1.png','/images/ttt2.png','/images/ttt3.png']}>
+        {/* <ProjectDisplay item='Project - Tic Tac Toe Game' images={['/images/ttt1.png','/images/ttt2.png','/images/ttt3.png']}>
           <p className='text-lg'>This Tic Tac Toe game was created using Vite + React, Tailwind CSS, and it uses state management and event handling concepts. <br />
-            <a className='hover:text-blue-500' href='https://https://github.com/its-kshitij4444/tic-tac-toe'>GitHub Link to Project</a>
+            <a className='hover:text-blue-500' href='https://github.com/its-kshitij4444/tic-tac-toe'>GitHub Link to Project</a>
           </p>
-        </ProjectDisplay>
+        </ProjectDisplay> */}
       </ContainerComp>
 
       <ContainerComp id='contact' styles='flex-col md:flex-row justify-center md:justify-around items-center gap-8 bg-black/40'>
